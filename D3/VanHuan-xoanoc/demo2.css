@@ -1,0 +1,18 @@
+#xoanoc{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation: example 4s 2s infinite ;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    12.5%  {background-color:yellow; left:300px; top:0px;}
+    25%  {background-color:blue; left:300px; top:300px;}
+    37.5%  {background-color:green; left:0px; top:300px;}
+    50% {background-color:red; left:0px; top: 100px;}
+    62.5%  {background-color:yellow; left:200px; top:100px;}
+    75%  {background-color:blue; left:200px; top:200px;}
+    87.5%  {background-color:green; left:100px; top:200px;}
+    /* 100%  {background-color:green; left:0px; top:200px;} */
+  }
