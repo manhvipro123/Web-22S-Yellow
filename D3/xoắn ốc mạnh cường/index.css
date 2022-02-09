@@ -1,0 +1,52 @@
+/* .box{
+    width: 100px;
+    height: 100px;
+   background-color: rgb(136, 132, 132);
+  position: relative;
+  animation: move 5s ease-out 100ms;
+  animation-iteration-count: infinite;
+  animation-duration: 5s; 
+  -webkit-animation: move 5s ease-out 100ms;
+  -webkit-animation: infinite;
+}
+@keyframes move{
+    0%{
+        background-color: blue;
+        left: 0px;
+        top: 0px;
+        
+    }
+    20%{
+        background-color: rgb(39, 219, 48);
+        top: 0px;
+        left:100px
+    }
+}
+@-wetkit-keyframes move{
+    0%{
+        left: 0px;
+        
+    }
+    20%{
+        top: 0px;
+        left:100px
+    }
+} */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:300px; top:0px;}
+    50%  {background-color:blue; left:300px; top:300px;}
+    75%  {background-color:green; left:0px; top:300px;}
+    100% {background-color:red; left:0px; top:100px;}
+
+  }
