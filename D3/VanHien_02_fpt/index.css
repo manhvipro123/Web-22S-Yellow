@@ -1,0 +1,19 @@
+.main{
+    height: 1500px;
+    width: 1000px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bottom{
+    height: 100px;
+    width: 1000px;
+    background-color: royalblue;
+}
+#dangky{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    margin-left: 500px;
+}
