@@ -1,0 +1,41 @@
+/* .Backround{
+    background-color: rgba(20, 19, 19, 0.795);
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+.Content{
+    height: 300hw;
+    width: 60vw;
+    align-items: center;
+    background-color:rgb(29, 27, 27);
+    display: flex;
+    flex-direction: row;
+    border: 3px solid;
+    color: white;
+}
