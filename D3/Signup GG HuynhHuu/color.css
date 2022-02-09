@@ -1,0 +1,27 @@
+.global{
+     /* border: 2px solid; */
+    
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    padding-left: 350px;
+}
+
+
+.content{
+    /* border: 2px solid; */
+    height: max-content;
+    width: max-content;
+    display:grid;
+    margin:auto;
+}
+
+
+
+.logo{
+    /* border: 2px solid; */
+    width: 45px;
+    height: 50px;
+    padding-right:650px;
+}
