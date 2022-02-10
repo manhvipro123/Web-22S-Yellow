@@ -3,7 +3,7 @@ body{
     padding: 0px;
 }
 #main{
-	width: 1600px;
+	width: 1519px;
 	height : 1200px;
 	background-color: black;
 	margin-left:auto;	
@@ -101,4 +101,9 @@ body{
 #gach{
     border-bottom: 2px solid gray; 
     width: 47%;
+}
+#d{
+    margin-left: 50px;
+    width: 410px;
+    background-color:#222222;
 }
