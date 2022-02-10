@@ -4,25 +4,76 @@
 <meta charset="utf-8">
 	<title>CV cá nhân</title>
 	<link rel="stylesheet" type="text/css" href="./fpt.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 <body>
 <div id="main">
 		<div id="tieude">
+            <div id="dau">  
+                <div id="left">
+                    <img src="LOGO-FPT-Play.png" alt="Girl in a jacket" id="logo">
+                </div>          
+                <div id="right">
+                    <nav>
+                        <span class="iconify" data-icon="et:magnifying-glass"></span>
+                        <!-- <img src="search.png" alt="Girl in a jacket" id="logoseach"> -->
+                        <button id="goi"><b>Mua gói</b></button>
+                        <a href="Đang nhập">Đang nhập</a> 
+                    </nav>
+                </div>
+            </div>
+
+            <nav>
+                <a href="Trang chủ">Trang chủ</a> 
+                <a href="Truyền hình">Truyền hình</a> 
+                <a href="HBO GO">HBO GO</a> 
+                <a href="Phim bộ">Phim bộ</a> 
+                <a href="Thể thao">Thể thao</a> 
+                <a href="Anime">Anime</a> 
+                <a href="TV show">TV show</a> 
+                <a href="Phim lẻ">Phim lẻ</a> 
+                <a href="Phim chiếu rạp">Phim chiếu rạp</a> 
+                <select id="chon" >
+                    <option value="Xem thêm">Xem thêm</option>
+                    <option value="Thiếu nhi">Thiếu nhi</option>
+                    <option value="Hài">Hài</option>
+                    <option value="Học online">Học online</option>
+                </select>
+            </nav>
 		</div>	
 		<div id="fontdk">
-            <p id="dk">Đăng ký tài khoản</p>
+            <p id="dk"><b>Đăng ký tài khoản</b></p>
            <div id="font">
                 <br>
                 <br>
                 <p id="chaomung">Vui lòng nhập số điện thoại</p>
-                <div>
-                    <input type="text" value placeholder="  Nhập số điện thoại" class="form">
-                    <br>
-                    <input type="text" value placeholder="  Nhập mật khẩu" class="form">
-                    <br>
-                    <input type="text" value placeholder="  Nhập lại mật khẩu" class="form">
-                    <h3 id="dieukhoan">Khi bấm vào nút đăng ký, bạn đã đồng ý với</h3>
-                    <h3 id="chinhsach">Chính sách và quy định</h3>
+                <div id="khung">
+                    <div>
+                        <input type="text" value placeholder="  Nhập số điện thoại" class="form">
+                        <br>
+                        <input type="text" value placeholder="  Nhập mật khẩu" class="form">
+                        <br>
+                        <input type="text" value placeholder="  Nhập lại mật khẩu" class="form">
+                        <p id="dieukhoan">Khi bấm vào nút đăng ký, bạn đã đồng ý với <p id="chinhsach">Chính sách và quy định</p>
+                        </p>
+                        <button id="buttondk"><b>Đăng ký</b></button>
+                    </div>
+
+                    <table><tr>
+                        <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
+                        <td style="vertical-align:middle;text-align:center" rowspan="2" id="gach">hoặc</td>
+                        <td style="border-bottom: 1px solid gray; width: 47%">&nbsp;</td>
+                        </tr><tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                        
+                    <div>
+                        <button id="buttonfa"><b>Facebook</b></button>
+                        <button id="buttongg"><b>Google</b></button>
+                    </div>
                 </div>
            </div>
             </div>
