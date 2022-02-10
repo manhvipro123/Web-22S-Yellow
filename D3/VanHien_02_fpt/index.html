@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thiết kế</title>
-    <link rel="stylesheet" href="./index.css"/>
+<meta charset="utf-8">
+	<title>Thiết kế form đăng ký</title>
+	<link rel="stylesheet" type="text/css" href="./index.css"/>
 </head>
 <body>
-    <div class="main">
-        <div id="bottom"></div>
-        <div id="dangky">
-            <div>
-                <p id="dk">Đăng ký tài khoản</p>
-                <div class="info">
-                    <input type="text" value placeholder="Nhập số điện thoại" class="form">
+<div id="main">
+		<div id="tieude">
+            <img class="fptplay" src="./fptplay.png">       
+		</div>	
+		<div id="fontdk">
+            <p id="dk">Đăng ký tài khoản</p>
+           <div id="font">
+                <br>
+                <br>
+                <p id="chaomung">Vui lòng nhập số điện thoại</p>
+                <p id="toida">Vui lòng nhập Mật khẩu tối đa 6 số (0-9)</p>
+                <div>
+                    <input type="text" value placeholder="  Nhập số điện thoại" class="form">
+                    <br>
+                    <input type="text" value placeholder="  Nhập mật khẩu" class="form">
+                    <br>
+                    <input type="text" value placeholder="  Nhập lại mật khẩu" class="form">
+                    <h3 id="dieukhoan">Khi bấm vào nút đăng ký, bạn đã đồng ý với</h3>
+                    <h3 id="chinhsach">Chính sách và quy định</h3>
+                    <div class="button">
+                        <button class="dangky" type="submit">Đăng ký</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <td id="gach">&nbsp;</td>
+                            <td rowspan="2" id="hoac">hoặc</td>
+                            <td id="gach">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <div class="button">
+                        <button class="fb" type="submit">FaceBook</button>
+                    </div>
+                    <div class="button">
+                        <button class="dangky" type="submit">Google</button>
+                    </div>   
                 </div>
-                <div class="info">
-                    <input type="matkhau" value placeholder="Nhập mật khẩu" autocomplete="new-password" maxlength="6" class="form">
-                </div>
-                <div class="info">
-                    <input type="matkhau" value placeholder="Nhập lại mật khẩu" autocomplete="new-password" maxlength="6" class="form">
-                </div> 
-                <p class="center-align">Khi bấm vào nút đăng ký, bạn đã đồng ý với</p>   
-                <div class="dangky">
-                    <button type="submit" value class="button">Đăng ký</button>
-                </div>
-            <div class="text">
-                <p>
-                    <span>hoặc</span>
-                </p>
-            </div>
-            <div class="dangky">
-                <button type="submit">FaceBook</button>
-            </div>
-            <div class="dangky">
-                <button type="submit">Google</button>
-            </div>   
+           </div>
             </div>
         </div>
-    </div>
 </body>
 </html>
