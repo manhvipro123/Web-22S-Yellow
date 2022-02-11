@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+/* .background{
+    width: 100px;
+    height: 200px; 
+} */
+.Sanpham{
+    width: 400px;
+}
+.item{
+    border: 1px solid black;
+    align-items: center;
+  
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+ 
+}
+.itemImage{
+    height: 200px;
+    width: 200px;
+}
+button{
+    width: 100px;
+    height:25px ;
+
+}
+img{
+    height: 90rem;
+    height: 40rem;
+}
