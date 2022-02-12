@@ -1,0 +1,135 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+	width: 1519px;
+	height :130px;
+	background-color:green;
+	float: left;
+	text-align:center;
+}
+#fo4{
+	width: 160px;
+	height: 90px;
+	display: list-item;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.top{
+	width: 1519px;
+	height : 2500px;
+	background-color:gray;
+    display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+#bottom{
+	width: 1519px;
+	height :400px;
+	background-color:#C0C0C0;
+}
+.container{
+    width: 1519px;
+	height : 2500px;
+	color:black;
+    display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+}
+.item{
+    width: 300px;
+	height: 500px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 40px;
+	margin-bottom: 50px;
+}
+#p1{
+	font-size: 20px;
+	color: white;
+	background-color: green;
+}
+#p2{
+	font-size: 20px;
+	color: white;
+	background-color: green;
+}
+#p3{
+	font-size: 20px;
+	color: white;
+	background-color: green;
+}
+#p4{
+	font-size: 20px;
+	color: white;
+	background-color: green;
+}
+#p5{
+	font-size: 20px;
+	color: white;
+	background-color: green;
+}
+.web{
+	font-size: 20px;
+	margin-left: 20px;
+}
+#p6{
+	font-size: 20px;
+	color: black;
+}
+#p7{
+	font-size: 20px;
+	color: black;
+}
+#p8{
+	font-size: 20px;
+	color: black;
+}
+#p9{
+	font-size: 20px;
+	color: black;
+}
+#p10{
+	font-size: 20px;
+	color: black;
+}
+.lienhe{
+	text-align: center;
+}
+#p11{
+	font-size: 20px;
+	color: black;
+}
+#p12{
+	font-size: 20px;
+	color: black;
+}
+#p13{
+	font-size: 20px;
+	color: black;
+}
+.dichvu{
+	text-align: left;
+	margin-left: 20px;
+}
+#p14{
+	font-size: 20px;
+	color: black;
+}
+#p15{
+	font-size: 20px;
+	color: black;
+}
+#p16{
+	font-size: 20px;
+	color: black;
+}
+#gach{
+	width: 500px;
+	background-color: green;
+}
+#gachlh{
+	width: 1200px;
+	background-color: green;
+}
