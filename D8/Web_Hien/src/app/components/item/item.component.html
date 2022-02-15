@@ -1,0 +1,12 @@
+<div class="container">
+    <div *ngFor="let item of List" class="menu">
+        <img width="100%" [src]="item.photoUrl">
+        <div class="text">
+            <h1>{{item.BanAcc}}</h1>
+            <h1>{{item.name}}</h1>
+            <h1>{{item.price}}</h1>
+            <h1>{{item.atm}}</h1>
+        </div>
+        <button id="mua">Mua</button>
+    </div>
+</div>
