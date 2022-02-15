@@ -11,11 +11,13 @@ import { MainComponent } from './components/main/main.component';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ItemComponent } from './components/main/item/item.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MainComponent
+    MainComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
