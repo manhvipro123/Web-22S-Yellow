@@ -1,0 +1,11 @@
+<div class="container">
+    <!-- <div *ngFor="let item of List">
+        <app-item [item]="item"></app-item>
+    </div> -->
+    <div *ngFor="let item of print.List1">
+        <app-item [item]="item"></app-item>
+        <app-item [item]="item" (itemChange)="item.quantily=$event"></app-item>
+    </div>
+    <button id="tongtien" (click)="total()">Tổng tiền:</button>
+    <div innerHTML = "{{thanhTien}}"></div>
+</div>
