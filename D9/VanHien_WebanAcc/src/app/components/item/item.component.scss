@@ -1,0 +1,43 @@
+.menu{
+    width: 350px;
+    height: 620px;
+    margin-top: 50px;
+    margin-left: 40px;
+	margin-bottom: 50px;
+    border: solid 3px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+#mua{
+    font-size: 20px;
+    width: 250px;
+    background-color: #99FFFF;
+    border-radius: 17px;
+}
+#mua:hover{
+    cursor: all-scroll;
+}
+.text{
+    font-size: 20px;
+}
+.team{
+    width: 350px;
+    height: 250px;
+}
+.count{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+p{
+    padding: 10px;
+}
+.mark{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 17px;
+    background-color: #99CCFF;
+}

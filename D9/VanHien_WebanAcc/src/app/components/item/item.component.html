@@ -1,0 +1,19 @@
+<div class="full">
+    <div class="menu">
+        <img class="team" [src]="item.photoUrl">
+        <div class="text">
+            <div id="name">
+                <h1><b>{{item.BanAcc}}</b></h1>
+                <h2><b>{{item.name}}</b></h2>
+                <h3><b>{{item.price}}</b></h3>
+                <h4><b>{{item.atm}}</b></h4>
+            </div>
+            <button matTooltip="Mua" id="mua">Mua</button>
+            <div class="count">
+                <button class="mark"(click)="decrease()">-</button>
+                <p>{{counter}}</p>
+                <button class="mark" (click)="increase()">+</button>
+            </div>
+        </div>
+    </div>
+</div>
