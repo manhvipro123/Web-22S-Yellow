@@ -1,0 +1,47 @@
+
+
+.container{
+    border: 2px solid rgb(128, 103, 103);
+    
+    height: 380x;
+    width: 350px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+    
+    
+}
+
+    
+
+.price{
+    display: flex;
+    color: black;
+    
+}
+.btn{
+
+    position: relative;
+    font-size: 13px;
+    border-radius: 20px;
+    color: #FF3100;
+    font-weight: 900;
+    border: 1px solid black;
+    height: 28px;
+    margin-left: 50px;
+    
+   
+    
+}
+.btn:hover{
+    background-color: #666564;
+}
+
+
