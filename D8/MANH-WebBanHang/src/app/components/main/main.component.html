@@ -2,8 +2,13 @@
     <div id="choice">
       <input style ="height:50%;width: 50%;float:right;"placeholder="Tìm kiếm tên"id="searchInput">
     </div>
-    <div *ngFor="let item of arr" class = "item">
-        <h2>{{item}}</h2>
+    <div id="list-items">
+      <div *ngFor = 'let item of listItem'>
+        <app-item [item] = 'item'></app-item>
+      </div>
+    </div>
+    <div id="footer">
+      <img src = '../../../assets/1.PNG'>
     </div>
 </div>
 

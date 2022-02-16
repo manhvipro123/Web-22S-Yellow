@@ -1,0 +1,9 @@
+    <div class ="film"> 
+        <img [src] = 'item.imageURL'>
+        <h3 >{{item.name}}</h3>
+        <p style="font-size:small;color:gray;">{{item.description}}</p>
+        <h4>{{item.price}} vnđ</h4>
+        <app-counter [counter]="item.quantity" (change)="item.quantity = $event" ></app-counter>
+        <a mat-button href="https://www.google.com/" target="_blank"style="cursor:pointer;color:rgb(240,28,100)">Mua</a> 
+    </div>
+

@@ -12,12 +12,18 @@ import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemComponent } from './components/main/item/item.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CounterComponent } from './components/counter/counter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MainComponent,
-    ItemComponent
+    ItemComponent,
+    FooterComponent,
+    CounterComponent,
+
   ],
   imports: [
     BrowserModule,
