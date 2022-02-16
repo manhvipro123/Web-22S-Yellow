@@ -3,5 +3,6 @@ export interface Game {
     BanAcc : string,
     name : string,
     price: string,
-    atm : string,
+    atm : number,
+    quantily : number,
 }

@@ -14,6 +14,7 @@ import { ItemComponent } from './components/item/item.component';
 import { ListItemsComponent } from './components/list-items/list-items.component';
 import { MywebComponent } from './components/myweb/myweb.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ShopaccComponent } from './components/shopacc/shopacc.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ItemComponent,
     ListItemsComponent,
     MywebComponent,
+    ShopaccComponent,
     
   ],
   imports: [

@@ -11,5 +11,4 @@ export class MidComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

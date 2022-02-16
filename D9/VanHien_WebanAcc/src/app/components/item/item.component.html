@@ -5,15 +5,17 @@
             <div id="name">
                 <h1><b>{{item.BanAcc}}</b></h1>
                 <h2><b>{{item.name}}</b></h2>
-                <h3><b>{{item.price}}</b></h3>
-                <h4><b>{{item.atm}}</b></h4>
+                <h1><b>{{item.price}}</b></h1>
+                <h1><b>{{item.atm}}</b></h1>
+                <h1><b>SL:{{item.quantily}}</b></h1>
             </div>
-            <button matTooltip="Mua" id="mua">Mua</button>
             <div class="count">
                 <button class="mark"(click)="decrease()">-</button>
-                <p>{{counter}}</p>
+                <!-- <p>{{counter}}</p> -->
+                <p>{{item.quantily}}</p>
                 <button class="mark" (click)="increase()">+</button>
             </div>
+            <button matTooltip="Mua" id="mua">Mua</button>
         </div>
     </div>
 </div>

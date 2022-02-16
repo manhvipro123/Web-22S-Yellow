@@ -1,18 +1,21 @@
 .menu{
     width: 350px;
-    height: 620px;
+    height: auto;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 20px;
 	margin-bottom: 50px;
     border: solid 3px;
     display: flex;
     flex-direction: column;
     grid-gap: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.menu:hover{
+    box-shadow: 5px 5px 10px blue;
 }
 #mua{
     font-size: 20px;
-    width: 250px;
+    width: 150px;
     background-color: #99FFFF;
     border-radius: 17px;
 }

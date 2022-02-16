@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Game } from 'src/app/modules/game.model';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Game } from 'src/app/models/game.model';
 
 @Component({
   selector: 'app-item',
@@ -7,8 +7,10 @@ import { Game } from 'src/app/modules/game.model';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  public counter = 0;
+  
   @Input() item !: Game;
+  @Output() itemChange = new EventEmitter();
+  onChange: any;
 
   constructor() { }
 
@@ -16,17 +18,18 @@ export class ItemComponent implements OnInit {
     console.log(this.item)
   }
   public increase(){
-    if (this.counter >= 5){
+    if (this.item.quantily >= 5){
       return;
     }else {
-      this.counter++;
+      this.item.quantily++;
+      this.itemChange.emit(this.item.quantily);
     }
   }
   public decrease(){
-    if (this.counter <= 0){
+    if (this.item.quantily <= 0){
       return;
     }else{
-      this.counter--;
+      this.item.quantily--;
     }
   }
 }
