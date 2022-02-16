@@ -1,0 +1,14 @@
+<div class="container">
+    <ng-template>
+        <!-- <app-item *ngFor="let item of print.list_item" ></app-item> -->
+
+
+    </ng-template>
+    <div *ngFor="let item of print.list_item">
+        <app-item [Item]="item" (itemChange)="item.quantity=$event"></app-item>
+
+    </div>
+    <button (click)="total()">Tính tổng tiền :</button>
+    <div innerHTML="{{thanhTien}}"></div>
+    <!-- <app-item *ngFor="let item of list_item" [Item]="item"></app-item> -->
+</div>
