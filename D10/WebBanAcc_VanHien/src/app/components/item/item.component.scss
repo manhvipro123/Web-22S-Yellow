@@ -1,0 +1,53 @@
+.menu{
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 20px;
+	margin-bottom: 50px;
+    border: solid 3px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.menu:hover{
+    box-shadow: 5px 5px 10px blue;
+}
+#mua{
+    font-size: 20px;
+    width: 150px;
+    background-color: #99FFFF;
+    border-radius: 17px;
+    cursor: all-scroll;
+}
+.text{
+    font-size: 20px;
+}
+.team{
+    width: 350px;
+    height: 250px;
+}
+.count{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+p{
+    padding: 10px;
+}
+.mark{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 17px;
+    background-color: #99CCFF;
+}
+// #sum{
+//     font-size: 20px;
+//     width: 150px;
+//     background-color: #99FFFF;
+//     border-radius: 17px;
+//     margin-top: 17px;
+//     margin-bottom: 10px;
+//     cursor: all-scroll;
+// }

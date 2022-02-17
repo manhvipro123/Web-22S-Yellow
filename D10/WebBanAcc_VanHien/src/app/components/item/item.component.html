@@ -1,0 +1,24 @@
+<div class="full">
+    <div class="menu">
+        <img class="team" [src]="item.photoUrl">
+        <div class="text">
+            <div id="name">
+                <h1><b>{{item.BanAcc}}</b></h1>
+                <h2><b>{{item.name}}</b></h2>
+                <h1><b>{{item.price}}</b></h1>
+                <h1><b>{{item.atm}}</b></h1>
+                <h1><b>SL:{{item.quantily}}</b></h1>
+            </div>
+            <div class="count">
+                <button class="mark"(click)="decrease()">-</button>
+                <!-- <p>{{counter}}</p> -->
+                <p>{{item.quantily}}</p>
+                <button class="mark" (click)="increase()">+</button>
+            </div>
+            <button matTooltip="Mua" id="mua">Mua</button>
+            <div>
+                <p id="sum"><b>Tổng tiền: {{total}}</b></p>
+            </div>
+        </div>
+    </div>
+</div>
