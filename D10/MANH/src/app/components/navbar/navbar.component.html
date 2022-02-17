@@ -1,0 +1,22 @@
+    <mat-toolbar class = "toolbar">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+        <mat-menu #menu="matMenu">
+          <mat-selection-list #shoes>
+            <mat-list-option *ngFor="let film of typeOfFilms">
+              {{film}}
+            </mat-list-option>
+          </mat-selection-list>
+        </mat-menu>
+      </button>
+      
+      <span  style="padding-top:2px">Cho Những Phút Giây Thư Giãn</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button routerLink="/cart" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon >share</mat-icon>
+      </button>
+    </mat-toolbar>
+   
