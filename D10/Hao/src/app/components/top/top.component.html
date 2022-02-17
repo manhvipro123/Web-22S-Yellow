@@ -1,0 +1,28 @@
+
+    <div class="header">
+        <div class="topnav">
+            <a (click)="navigate('/')" class="active" >Home</a>
+            <b href="#user">Tài khoản</b> 
+            <b href="#about">Đăng nhập</b>
+            
+            <b (click)="navigate('/shoppecar')">Giỏ hàng</b>
+          
+            <b>
+            <mat-form-field appearance="fill">
+              <mat-label>Lựa chọn</mat-label>
+              <mat-select disableRipple>
+                <mat-option value="1">Hot</mat-option>
+                <mat-option value="2">Popular</mat-option>
+             
+              </mat-select>
+            </mat-form-field>
+            </b>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                
+              </form>
+            </div>
+          </div>
+    </div>
+
