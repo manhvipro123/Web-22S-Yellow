@@ -1,0 +1,29 @@
+<p></p>
+<div class="body">
+  <div class="container">
+    <div class="img">
+      <div class="title">
+        <h1>{{items.name}}</h1>
+      </div>
+      <h1 style="font-size: small;">Men's training shoe</h1>
+
+
+      <img src="{{items.photo}}" style="height: 200px;width: 200px;" alt="">
+      <div class="price">
+        <h2 style="margin-bottom: 100px; color: black;">{{items.price}}$</h2>
+
+        <button style="margin: 5px 0  130px 80px;" (click)="minus()">-</button>
+        <h3 style="margin-left: 5px;">{{this.items.quantity}}</h3>
+        <button style="margin: 5px 0  130px 5px;" (click)="plus()">+</button>
+
+        <button class="btn">Add to cart<span class="bg"></span></button>
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
