@@ -1,0 +1,21 @@
+
+<div class="bede">
+    <img src="https://static.nike.com/a/images/w_1920,c_limit/c5048093-6540-4256-a13e-0b048bb11650/how-do-i-become-a-nike-member-nike-help.jpg" style="height: 315px;width: 500px;" alt="">
+    <img src="https://cdn1.tuoitre.vn/zoom/600_315/2021/3/30/us-nike-sue-satan-shoes-nyt-16170692408181513721521-crop-16170693501771962446009.jpg" alt="">
+    <img src="https://www.sportsdirect.com/images/marketing/sd-lv8-nav-brands-nike.jpg" style="height: 315px;"  alt="">
+</div>
+
+<div class="mid">
+    <div *ngFor='let item of dtS.Listitem' class="mid">
+        <app-item [items]="item" (onChange)="Tinhtien(item.quantity,$event)" ></app-item>
+        
+    </div> 
+  
+     
+</div>
+<div class="Pay">
+    <p style="padding-top: 1 rem;margin-right: 100% ;font-size: 70px;">Total:{{sum}}$</p> 
+ </div>
+ 
+ 
+   
