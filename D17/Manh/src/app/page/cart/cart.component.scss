@@ -1,0 +1,11 @@
+div p{
+    color: white;
+    font-weight: bold;
+}
+
+.item-add{
+    display: grid;
+    grid-gap: 20%;
+    grid-template: auto 1fr auto / auto 1fr auto;
+
+}
