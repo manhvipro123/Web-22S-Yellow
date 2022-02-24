@@ -1,0 +1,12 @@
+<form [formGroup]="form" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Số 1</mat-label>
+        <input formControlName="so1" matInput placeholder="" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Số 2</mat-label>
+        <input formControlName="so2" matInput placeholder="" value="">
+    </mat-form-field>
+    <button (click)="tinh()" type="submit" mat-raised-button>Xác nhận</button>
+</form>

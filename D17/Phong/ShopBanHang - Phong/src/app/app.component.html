@@ -1,0 +1,16 @@
+<div class="top">
+    <img class="logo" src="../../../assets/logo4.png" alt="">
+</div>
+<div class="select">
+    <button (click)="login()" routerLink="/login" class="login1" mat-button>Log in</button>
+    <button class="home1" mat-button>Home</button>
+    <button routerLink="/home" class="shop1" mat-button>Shop</button>
+    <button class="shoppingcard1" routerLink="/shopping-cards" mat-button>Shopping Card</button>
+    <!-- <button class="more1">More</button> -->
+    <button class="more1" mat-button>More</button>
+    <button (click)="logout()" class="logout1" mat-button>Log Out</button>
+</div>
+<!-- <h1 *ngIf="user" style="color: white;">{{user.displayName}}</h1> -->
+
+<router-outlet>
+</router-outlet>
