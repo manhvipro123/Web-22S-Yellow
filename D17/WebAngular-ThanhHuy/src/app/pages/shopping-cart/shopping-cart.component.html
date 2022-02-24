@@ -1,0 +1,45 @@
+<app-body></app-body>
+<div class="big">
+    <div class="'left">
+        <h2 style="margin-top: 20px; margin-left: 50px">Danh sách sản phẩm trong giỏ hàng: </h2>
+        <div class="cart">
+            <div *ngFor="let item of this.cartSerVice.arrayCart">
+                <img [matTooltip]="item.Des" class="img" [src]="item.PhotoURL" />
+                <h3>Tên game: {{item.Name}}</h3>
+                <h4>Giá: {{item.Price}} VNĐ</h4>
+                <h2>Số lượng: {{item.Quantity}} key</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <!-- <h3>Bạn có mã ưu đãi??</h3>
+        <input style="margin-left: 100px; margin-bottom: 20px;" type="text" placeholder="Mã giảm gia" />
+        <button class="button" mat-raised-button color="primary">Áp dụng</button>
+        <h3>Bạn muốn tặng cho bạn bè??</h3>
+        <input style="margin-left: 100px;" type="text" placeholder="Email người nhận" />
+        <button class="button" mat-raised-button color="primary">Áp dụng</button>
+        <h3 style="margin-top: 20px">Thanh toán</h3>
+        <p style="margin-left: 100px; margin-top: 22px; ">Tổng giá trị sản phẩm: </p>
+        <button style="margin-left: 100px;" class="button" mat-raised-button color="primary">Thanh toán </button> -->
+        <p>Tổng số tiền phải thanh toán là: {{this.cartSerVice.sum}} VNĐ</p>
+        <button style="width: 300px;" (click)="thanhToan()" mat-raised-button color="primary">Thanh toán</button>
+    </div>
+</div>
+
+<img src="../../../assets/img/h1.jpg" />
+
+
+
+
+<!-- <div *ngFor="let item of this.cartSerVice.arrayCart">
+    <img [matTooltip]="item.des" class="img" [src]="item.photoURL" />
+    <h3>{{item.name}}</h3>
+    <h4>{{item.price}}</h4>
+    <h2>{{item.quantity}}</h2>
+</div> -->
+
+<!-- <div>
+    <button (click)="thanhToan()" mat-raised-button color="primary">Thanh toán</button>
+    <p>{{this.cartSerVice.sum}} VNĐ</p>
+</div> -->
