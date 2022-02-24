@@ -1,0 +1,29 @@
+<form [formGroup]="form">
+      <mat-form-field appearance="outline">
+        <!-- <mat-hint>Nhập vào một chuỗi phép tính</mat-hint> -->
+        <mat-label>Nhập vào só A</mat-label>
+        <input formControlName="soA" matInput placeholder="...">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+       
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <!-- <mat-hint>Nhập vào một chuỗi phép tính</mat-hint> -->
+        <mat-label>Nhập vào số B</mat-label>
+        <input formControlName="soB" matInput placeholder="...">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+       
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <!-- <mat-hint>Kết quả</mat-hint> -->
+        <mat-label>{{result}}</mat-label>
+        <input  matInput  readonly>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+      </mat-form-field>
+    
+      <button (click)="compare()" style ="border-style:groove;background-color: pink;color:black;"mat-button color="primary" type="submit">Compare</button>
+   
+</form>
+    
