@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.tongtien {
+    padding: 10px;
+    color: black;
+    font-size: xx-large;
+}
+
+// .thanhtoan {
+//     padding: 15px;
+//     margin-bottom: 20px;
+//     margin-left: 85%;
+//     font-size: large;
+//     color: #000;
+// }
+.boxtongtien {
+    width: 270px;
+    border: 10px solid black;
+    padding: 4px;
+    margin: 20px;
+    background-color: white;
+    margin-left: 1%;
+}
