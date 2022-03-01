@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "59e93658-919f-4ffc-9ab9-dd05da52033a"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -112,8 +115,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "Day20:build:production",
-            "firebaseProject": "fir-angular-371b9",
-            "firebaseHostingSite": "fir-angular-371b9"
+            "firebaseProject": "my-app-73524",
+            "firebaseHostingSite": "my-app-73524"
           }
         }
       }
