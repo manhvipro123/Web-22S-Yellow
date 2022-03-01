@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-angular-371b9": {
+      "hosting": {
+        "Day20": [
+          "fir-angular-371b9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-angular-371b9"
+  }
+}
