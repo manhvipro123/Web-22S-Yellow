@@ -1,0 +1,27 @@
+
+<div [matTooltip]="Item.popularity" class="menu">
+            <img  class="imgas" src="{{Item.photoURL}}">
+            <div class="text">
+            <h1>{{Item.name}}</h1>
+            <h1>{{Item.pirce}}vnd</h1>
+            <!-- <h1>SL:{{Item.quantity}}</h1> -->
+
+          <h1>SL : {{Item.quantity}}</h1>
+        </div>
+            <button (click)="get()" class="button">Thêm vào giỏ hàng</button>
+            <div class="counter">
+                <button mat-raised-button color="primary" (click)="decrement()">-</button>
+                <p>{{Item.quantity}}</p>
+                <button mat-raised-button color="accent" (click)="increment()">+</button>
+
+            </div>
+            <div>
+              <p>Tổng tiền : {{total}}</p>
+            </div>
+            
+        </div>
+        
+    
+    
+
+

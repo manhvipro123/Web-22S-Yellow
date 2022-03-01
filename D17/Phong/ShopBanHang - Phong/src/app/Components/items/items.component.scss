@@ -1,0 +1,51 @@
+.items {
+    width: 90%;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.items:hover {
+    color: red;
+}
+
+.photo {
+    width: 270px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: auto;
+}
+
+.name {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-left: 12px;
+    margin-top: 20px;
+    display: block;
+    font-size: x-large;
+}
+
+.price {
+    color: white;
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.description {
+    color: white;
+    margin-left: 43%;
+    font-size: larger;
+}
+
+.btnmua {
+    margin-top: 10px;
+    margin-left: 125px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+}

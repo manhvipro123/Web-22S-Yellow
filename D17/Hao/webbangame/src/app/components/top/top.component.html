@@ -1,0 +1,31 @@
+
+    <div class="header">
+        <div class="topnav"><button>
+            <a (click)="navigate('/')" class="active" >Home</a>
+            <b href="#user">Tài khoản</b> 
+            
+            <b (click)="login()" href="#about">Đăng nhập</b>
+            <b (click)="logout()" href="#about">Đăng xuất</b>
+            <b (click)="navigate('/shoppecar')">Giỏ hàng</b>
+          </button>
+          
+            <b>
+            <mat-form-field appearance="fill">
+              <mat-label>Lựa chọn</mat-label>
+              <mat-select disableRipple>
+                <mat-option value="1">Hot</mat-option>
+                <mat-option value="2">Popular</mat-option>
+             
+              </mat-select>
+            </mat-form-field>
+            </b>
+            <div r class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                
+              </form>
+            </div>
+          </div>
+          <h1 *ngIf="user">{{user.displayName}}</h1>
+    </div>
+

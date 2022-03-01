@@ -1,0 +1,26 @@
+.item {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-top: -5px;
+  background-image: url("https://chiase24.com/wp-content/uploads/2022/01/Tong-hop-cac-hinh-anh-background-dep-nhat-34.jpg");
+  background-size: cover;
+}
+
+// .tongtien {
+//   margin-top: 20px;
+// }
+
+.huhu {
+  display: flex;
+}
+
+p {
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+img {
+  width: 100%;
+  height: 40%;
+}
