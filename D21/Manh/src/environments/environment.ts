@@ -5,6 +5,15 @@
 export const environment = {
   firebase: {
     //add config here
+   
+      apiKey: "AIzaSyBW-j_TdHFhYl8-XTXfXcwGaIzaqLTwTS4",
+      authDomain: "fir-angular-371b9.firebaseapp.com",
+      projectId: "fir-angular-371b9",
+      storageBucket: "fir-angular-371b9.appspot.com",
+      messagingSenderId: "597624919873",
+      appId: "1:597624919873:web:3bdff10a2b9b3059a2b3c0",
+      measurementId: "G-P1W34X6EDE"
+   
   },
   production: false
 };

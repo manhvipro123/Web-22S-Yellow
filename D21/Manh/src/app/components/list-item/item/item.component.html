@@ -9,7 +9,7 @@
     </div>
 
     <div style ="margin-top: 10px;">
-        <app-counter [counter]="item.quantity" (change)="changeQuantity($event)" ></app-counter>
+        <app-counter [item]="item" [counter]="item.quantity" (change)="changeQuantity($event)" ></app-counter>
         <!-- <button mat-button (click)="addItem()" style="border-style:dotted ;cursor:pointer;color:rgb(240,28,100);margin:5px 0 0 0;">Mua</button> -->
         
     </div>
