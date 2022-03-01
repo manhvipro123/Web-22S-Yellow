@@ -1,0 +1,9 @@
+<div class="boxtongtien">
+    <p class="tongtien"> Total: {{this.tinhtong.tongtien}} USD</p>
+</div>
+<!-- <button class="thanhtoan" (click)="muaHang()">Thanh Toán</button> -->
+<div class="container">
+    <div *ngFor=" let account of data">
+        <app-items [item]="account"></app-items>
+    </div>
+</div>

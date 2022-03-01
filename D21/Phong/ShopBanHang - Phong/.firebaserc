@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "storebh-9be23": {
+      "hosting": {
+        "ShopBanHang": [
+          "storebh-9be23"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "storebh-9be23"
+  }
+}
