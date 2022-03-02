@@ -14,33 +14,24 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  typeOfFilms: string[] = [
-    'Animal',
-    'Ahegao',
-    'Action',
-    'BDSM',
-    'Bondage',
-    'Elf',
-    'GangBang',
-    'Guro',
-    'MILF',
-    'MindBreaking',
-    'NTR',
-    'Slave',
-    'Stocking',
-    '3Some',
-    'Vannila',
-  ];
+
   public data: Item[] = [];
 
   constructor(private dataService: DataService, private Firestore: Firestore) {
     // dataService.pushAutoData();
-    collectionData(this.ref, { idField: 'id' }).subscribe((res: any) => {
-      console.log(res);
+    dataService
+    .createListenerData(this.data)
+    .subscribe((value) => {
+      this.data = value as Item[];
+      this.dataService.data = value as Item[];
+      console.log(this.data);
     });
+    // collectionData(this.ref, { idField: 'id' }).subscribe((res: any) => {
+    //   console.log(res);
+    // });
   }
 
-  private ref = collection(this.Firestore, 'fruits');
+  // private ref = collection(this.Firestore, 'fruits');
 
   ngOnInit(): void {}
 }

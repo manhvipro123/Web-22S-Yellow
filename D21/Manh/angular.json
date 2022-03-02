@@ -115,8 +115,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "Day20:build:production",
-            "firebaseProject": "my-app-73524",
-            "firebaseHostingSite": "my-app-73524"
+            "firebaseProject": "fir-angular-371b9",
+            "firebaseHostingSite": "fir-angular-371b9"
           }
         }
       }
