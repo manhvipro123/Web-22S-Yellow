@@ -3,6 +3,6 @@
     <img class="photo" src="{{item.photoURL}}" alt="">
     <h4 class="price">{{item.price}} USD</h4>
     <h3 class="description">{{item.description}}</h3>
-    <app-couter [account]="item" class="counter" (changValue)="test($event)"></app-couter>
+    <app-couter [couter]="item.quantity" [account]="item" class="counter" (changValue)="test($event)"></app-couter>
     <button class="btnmua" (click)="this.tinhtong.getSum()">Mua</button>
 </div>
