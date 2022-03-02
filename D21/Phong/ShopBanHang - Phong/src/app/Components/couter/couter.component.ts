@@ -11,12 +11,11 @@ import { Account } from '../Models/account.model';
 export class CouterComponent implements OnInit {
   @Input() account!: Account;
   @Output() changValue = new EventEmitter();
+  @Input() couter = 0;
   constructor(public dataSv:DataService) { }
 
   ngOnInit(): void {
   }
-
-  public couter = 0;
 
   increment() {
     if (this.couter >= 10) {
