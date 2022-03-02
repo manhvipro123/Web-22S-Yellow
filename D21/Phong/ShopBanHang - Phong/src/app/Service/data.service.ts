@@ -41,7 +41,8 @@ export class DataService {
     deleteDoc(doc(this.firestore, 'produce',tempId)); 
   }
 
-  public accounts:Array<Account>= []
+  public accounts:Array<Account>= [
+  //   {
   //   name: "Sản Phẩm 1:",
   //   price: 120,  
   //   photoURL: "../../../assets/1495863.jpg",
@@ -126,6 +127,7 @@ export class DataService {
   // description: " Ngầu ^^",
   // quantity: 0,
   // },
+]
 
       // public pushAutoData(){
       //   let collect = collection(this.firestore,'produce');
@@ -133,5 +135,4 @@ export class DataService {
       //     addDoc(collect,account)
       //   }
       // }
-
 }
