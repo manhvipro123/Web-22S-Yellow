@@ -31,7 +31,7 @@ export class RegisterComponent implements OnInit {
     // });
   }
 
-  private ref = collection(this.Firestore, 'fruits');
+  // private ref = collection(this.Firestore, 'fruits');
 
   ngOnInit(): void {}
 }

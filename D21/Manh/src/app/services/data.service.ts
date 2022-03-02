@@ -22,8 +22,7 @@ export class DataService {
     });
   }
   public updateAllData(){
-    for(let item of this.data){
-      
+    for(let item of this.data){ 
       let tempId = (item as any)['id'];
       console.log(tempId);
       updateDoc(doc(this.firestore,'FillmStore', tempId ), {...item});
