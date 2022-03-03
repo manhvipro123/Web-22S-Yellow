@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
+const path = require("path");
 const admin = require("firebase-admin");
 var key = require("../keys/firebase-admin.json");
 
@@ -10,37 +11,41 @@ admin.initializeApp({
 });
 
 const firestore = admin.firestore();
-
+// (async ()=> {
+//     let Snapshot = await firestore.collection("items")
+//     .doc("0TecPozjTcdOTnEMFrFb").get();
+//     console.log(Snapshot);
+// })();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 app.get("/", (request, response) => {
-  response.send({
-    message: "Hello World",
-  });
+  response.sendFile(
+    path.join(__dirname, `index.html`));
+
 });
 
-//get item with params
-app.get("/item/:name", async function (request, response) {
-  let params = request.params.name;
-  console.log("API 1 " + params);
-  let querySnapshot = await firestore.collection(params).get();
 
-  let datas = await querySnapshot.docs.map((value) => {
-    let temp = value.data();
-    return temp;
+// app.get("/item/:name", async function (request, response) {
+//   let params = request.params.name;
+//   console.log("API 1 " + params);
+//   let querySnapshot = await firestore.collection(params).get();
+
+//   let datas = await querySnapshot.docs.map((value) => {
+//     let temp = value.data();
+//     return temp;
+//   });
+//   response.send(datas);
+// });
+app.get("/item/:id", async function (request, response) {
+    let params = request.params.id;
+    let querySnapshot = await firestore.collection("items").doc(params);
+    let datas = await querySnapshot.get();
+        response.send(datas);
   });
-  response.send(datas);
-});
 
-//params cần "<path>/:<tên thuộc tính cần truyền>/" trong code back-end
-// trên browser thì tuân thủ "<url/path/<tên thuộc tính>"
-
-//query thì back-end k cần khai báo trước thuộc tính query
-// trên browser thì tuân thủ "url/path?<tên thuộc tính>=<giá trị thuộc tính>"
-//query nếu có nhiều hơn 1 thuộc tính thì cách nhau bằng ký tự "&"
-//Get with query
+//get item with query
 app.get("/item", async function (request, response) {
   let temp = request.query;
   console.log("API 2 " + JSON.stringify(temp));
@@ -56,6 +61,9 @@ app.get("/item", async function (request, response) {
     console.log("Lỗi không lấy được data");
   }
 });
+
+
+
 
 app.post("/item", async (req, res) => {
   let body = req.body;
