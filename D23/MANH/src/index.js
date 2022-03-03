@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 const admin = require("firebase-admin");
+const path = require("path");
 var serviceAccount = require("./keys/fir-angular-371b9-firebase-adminsdk-8k64c-2ab91bc80f.json");
 
 admin.initializeApp({
@@ -16,9 +17,10 @@ app.use(cors());
 const firestore = admin.firestore();
 
 app.get("/",(request,response) => {
-    response.send({
-        message: "Hello World",
-    });
+    // response.send({
+    //     message: "Hello World",
+    // });
+    response.sendFile(path.join(__dirname,"./index.html"));
 });
 
 //get item with params
@@ -29,30 +31,29 @@ app.get("/",(request,response) => {
 // trên browser thì tuân thủ "url/path?<tên thuộc tính>=<giá trị thuộc tính>"
 //query nếu có nhiều hơn 1 thuộc tính thì cách nhau bằng ký tự "&"
 
-app.get("/item/:name", async function (request, response) {
-    let params = request.params.name;
-    let querySnapshot = await firestore.collection(params).get();
+// app.get("/item/:name", async function (request, response) {
+//     let params = request.params.name;
+//     let querySnapshot = await firestore.collection(params).get();
   
-    let datas = await querySnapshot.docs.map((value) => {
-      let temp = value.data();
-      return temp;
-    });
-    response.send(datas);
-  });
+//     let datas = await querySnapshot.docs.map((value) => {
+//       let temp = value.data();
+//       return temp;
+//     });
+//     response.send(datas);
+//   });
   
-  //get with query
-  app.get("/item/", async function (request, response) {
+  // get with query
+  app.get("/item", async function (request, response) {
     let temp = request.query.data;
     try{
-        let querySnapshot = await (
-            await firestore.collection(temp).get()
-          ).docs.map((value) => {
+        let querySnapshot = await firestore.collection(temp).get();
+        let datas = await querySnapshot.docs.map((value) => {
             let temp = value.data();
             return temp;
           });
-          response.send(querySnapshot);
+          response.send(datas);
     }catch(error){
-        console.log("Kiên bắt lỗi mày kìa!!!");
+        console.log("Kiên ký đầu mày !!!");
     }
   });
   
@@ -69,8 +70,22 @@ app.get("/item/:name", async function (request, response) {
         message: "Successful!!!",
       });
     }catch(error){
-        console.log("Trả tiền cho tao Hữu");
+        console.log("SAi rồi chú em");
     }
+  });
+
+  //get with id 
+  app.get("/item/:id", async function (request, response) {
+    let params = request.params.id;
+    let querySnapshot = await firestore.collection("items").doc(params);
+    querySnapshot.forEach((doc) =>{
+      console.log(doc.id, " => ", doc.data());
+      let temp = doc;
+      return temp;
+    });
+    // console.log(querySnapshot);
+    // let datas = await getDoc(querySnapshot);
+      response.send(temp);
   });
 
 app.listen(3000, () => {
