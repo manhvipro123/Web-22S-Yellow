@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-angular-c9d28": {
+      "hosting": {
+        "WebAngular": [
+          "fir-angular-c9d28"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-angular-c9d28"
+  }
+}
