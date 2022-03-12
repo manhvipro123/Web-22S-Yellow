@@ -1,0 +1,23 @@
+<div class="container">
+    
+    <ng-template>
+        <!-- <app-item *ngIf="let item of print.list_item" ></app-item> -->
+      
+
+
+    </ng-template>
+    <!-- <div *ngFor="let item of print.list_item">
+        <div *ngIf="item.popularity == 'Hot'" > 
+         <app-item [Item]="item" (itemChange)="total(item.quantity, $event)"></app-item>
+       
+
+    </div> 
+    <button (click)="total()">Tính tổng tiền :</button>
+    <div innerHTML="{{thanhTien}}"></div> -->
+    <!-- <app-item *ngFor="let item of list_item" [Item]="item"></app-item> -->
+    <p>Tính tổng tiền : {{tong | number}}</p>
+<!-- <div *ngFor="let item of this.getData.list_item">
+    <app-item [Item]="item"></app-item>
+</div> -->
+    <button (click)="get()">Get </button>
+</div>
