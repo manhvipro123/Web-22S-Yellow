@@ -1,0 +1,28 @@
+<h2>Thêm Items</h2>
+<form [formGroup]="form" (submit)="test()">
+    <mat-form-field appearance="legacy">
+        <mat-label>Tên Game</mat-label>
+        <input formControlName="name" matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Price</mat-label>
+        <input formControlName="pirce" matInput placeholder=" Price">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Hình ảnh</mat-label>
+        <input formControlName="photoURL" matInput placeholder="photoURL">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Độ hot</mat-label>
+        <input formControlName="popularity" matInput placeholder="popularity">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Version Game:</mat-label>
+        <input formControlName="quantity" matInput  placeholder="quantity">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>collectionName</mat-label>
+        <input formControlName="collectionName" matInput placeholder="collectionName">
+    </mat-form-field>
+    <button mat-raised-button>Submit</button>
+</form>

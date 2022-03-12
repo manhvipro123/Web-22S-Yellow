@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webbangame": {
+      "hosting": {
+        "WebBanHang": [
+          "webbangame"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webbangame"
+  }
+}
