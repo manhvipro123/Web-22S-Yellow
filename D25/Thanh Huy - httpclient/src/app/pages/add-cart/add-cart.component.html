@@ -1,0 +1,31 @@
+<form [formGroup]="form" (submit)="test()">
+    <mat-form-field appearance="legacy">
+        <mat-label>Collection</mat-label>
+        <input formControlName="collectName" matInput placeholder="Collection Name">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>ID</mat-label>
+        <input formControlName="Id" matInput placeholder="ID ">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Name</mat-label>
+        <input formControlName="Name" matInput placeholder=" Game">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Price</mat-label>
+        <input formControlName="Price" matInput placeholder=" Price">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Quantity</mat-label>
+        <input formControlName="Quantity" matInput placeholder="Quantity">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Des</mat-label>
+        <input formControlName="Des" matInput placeholder="Des">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Game Image</mat-label>
+        <input formControlName="photoURL" matInput placeholder="Image">
+    </mat-form-field>
+    <button mat-raised-button>Add Item</button>
+</form>
