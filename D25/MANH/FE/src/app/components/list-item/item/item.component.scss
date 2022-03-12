@@ -1,0 +1,32 @@
+.film{
+    text-align: center;
+    color: white;
+    border-style: groove;
+    height: 330px;
+    width: 300px;
+    margin-left: 35px;
+    padding-bottom: 200px;
+    box-shadow: 4px 4px;
+    background-color: rgba(32,32,32,255);
+}
+.film img{
+    padding-top: 0.5rem;
+    height: 300px;
+    width: 250px;
+}
+
+.film img:hover{
+    box-shadow: 5px 5px rgb(240,28,100);
+}
+
+.film h3:hover{
+    font-weight: bolder;
+}
+
+
+
+.film a{
+    border-style: dashed;
+    border-radius: 10px;
+}
+
