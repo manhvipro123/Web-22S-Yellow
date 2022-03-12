@@ -1,0 +1,37 @@
+<mat-toolbar class = "toolbar">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+      <mat-menu #menu="matMenu">
+        <mat-selection-list #shoes>
+          <mat-list-option *ngFor="let film of typeOfFilms">
+            {{film}}
+          </mat-list-option>
+        </mat-selection-list>
+      </mat-menu>
+    </button>
+    
+    <span id="title" (click)="turnBackHome()" style="padding-top:2px">Cho Những Phút Giây Thư Giãn</span>
+    <button mat-button routerLink="/register" > Xem Sản Phẩm </button>
+    <button mat-button (click)="openDialog1()" > Thêm Một Sản Phẩm </button>
+   
+    
+    <span class="example-spacer"></span>
+    <button (click)="login()" mat-icon-button class="example-icon" >
+      <mat-icon>login</mat-icon>
+    </button>
+    <button (click)="logout()" mat-icon-button class="example-icon" >
+      <mat-icon>logout</mat-icon>
+    </button>
+    <div *ngIf="user">
+      <div id="account">
+        <h1>{{user.displayName}}</h1>
+        <img [src] ="user.photoURL" style="border-radius:50%;width: 15%; height: 15%; padding: 3px 0 0 5px;">
+      </div>
+    </div>
+    <!-- <ng-template *ngIf="user">
+      <h1>{{user.displayName}}</h1>
+      <img [src] ="user.photoURL">
+    </ng-template> -->
+   
+  
+  </mat-toolbar>

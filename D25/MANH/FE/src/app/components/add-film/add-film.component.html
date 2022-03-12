@@ -1,0 +1,35 @@
+<!-- <div id ="input-form">
+    <p>ADD NEW ITEM</p>
+    <input matInput [(ngModel)]="this.name" placeholder="Name"/>
+    <input matInput [(ngModel)]="this.price" placeholder="Price"/>
+    <input matInput [(ngModel)]="this.quantity" placeholder="Quantity"/>
+    <input matInput [(ngModel)]="this.imageURL" placeholder="ImageURL"/>
+    <input matInput [(ngModel)]="this.description" placeholder="Description"/>
+    <button mat-raised-button (click)="this.pushData()">SUBMIT</button>
+</div> -->
+
+<form id = "input-form" [formGroup]="form" (submit)="pushData()">
+    <p>ADD NEW ITEM</p>
+    <mat-form-field appearance="legacy">
+        <mat-label>Name</mat-label>
+        <input formControlName="name" matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Price</mat-label>
+        <input formControlName="price" matInput placeholder=" Price">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Quantity</mat-label>
+        <input formControlName="quantity" matInput placeholder="Quantity">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Des</mat-label>
+        <input formControlName="description" matInput placeholder="Description">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>ImageURL</mat-label>
+        <input formControlName="imageURL" matInput placeholder="ImageURL">
+    </mat-form-field>
+    <button mat-raised-button>SUBMIT</button>
+</form>
+
